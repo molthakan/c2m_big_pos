@@ -51,6 +51,8 @@ a{
 สรุปยอดขาย กำไร</a></li>
 
 
+<li style="width: 100%;" <?php if($tab === 'reportsumaryday'){ echo 'class="active"';} ?> ><a href="<?php echo $base_url; ?>/sale/reportsumaryday"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 
+กราฟกำไร รายวัน </a></li>
 
 <li style="width: 100%;" <?php if($tab === 'reportsumarymonth'){ echo 'class="active"';} ?> ><a href="<?php echo $base_url; ?>/sale/reportsumarymonth"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 
 กราฟกำไร รายเดือน </a></li>
