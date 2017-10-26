@@ -32,7 +32,14 @@ $query = $this->db->query('SELECT
     (SELECT wid.product_pricebase FROM wh_product_list as wid WHERE wid.product_id=wpl.product_id AND wid.owner_id="'.$_SESSION['owner_id'].'") as product_pricebaseall
 
 
-    FROM wh_product_list as wpl WHERE wpl.owner_id="'.$_SESSION['owner_id'].'" ORDER BY product_priceall DESC');
+    FROM product_return_datail as sld 
+LEFT JOIN wh_product_list as wpl on wpl.product_id=sld.product_id
+WHERE wpl.owner_id="'.$_SESSION['owner_id'].'" 
+AND sld.adddate BETWEEN "'.$dayfrom.'" 
+AND "'.$dayto.'" 
+GROUP BY sld.product_id ORDER BY product_priceall DESC');
+
+
 $encode_data = json_encode($query->result(),JSON_UNESCAPED_UNICODE );
 return $encode_data;
 

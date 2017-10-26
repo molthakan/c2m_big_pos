@@ -50,6 +50,11 @@ a{
 <li style="width: 100%;" <?php if($tab === 'reportsumary'){ echo 'class="active"';} ?> ><a href="<?php echo $base_url; ?>/sale/reportsumary"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 
 สรุปยอดขาย กำไร</a></li>
 
+
+
+<li style="width: 100%;" <?php if($tab === 'reportsumarymonth'){ echo 'class="active"';} ?> ><a href="<?php echo $base_url; ?>/sale/reportsumarymonth"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 
+กราฟกำไร รายเดือน </a></li>
+
 </ul>
 
 </div>
