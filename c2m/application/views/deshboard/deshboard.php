@@ -166,23 +166,7 @@ $i++;
 <span class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: 50px;"></span><br /> <?=$lang_cusandcontact?>	
 </a>
 
-<hr />
 
-<a href="<?php echo $base_url;?>/sale/salelist" class="btn btn-danger"  style="font-size: 15px;font-weight: bold; width: 150px;">
-<span class="glyphicon glyphicon-list-alt" aria-hidden="true" style="font-size: 50px;"></span><br /> <?=$lang_salereport?>	
-</a>
-
-
-
-
-<a href="<?php echo $base_url;?>/salesetting/discount" class="btn btn-default"  style="font-size: 15px;font-weight: bold; width: 150px;">
-<span class="glyphicon glyphicon-cog" aria-hidden="true" style="font-size: 50px;"></span><br /> <?=$lang_salesetting?>
-</a>
-
-
-<a href="<?php echo $base_url;?>/marketing/email" class="btn btn-default"  style="font-size: 15px;font-weight: bold; width: 150px;">
-<span class="glyphicon glyphicon-envelope" aria-hidden="true" style="font-size: 50px;"></span><br /> <?=$lang_emailmarketting?>
-</a>
 
 
 </div>
